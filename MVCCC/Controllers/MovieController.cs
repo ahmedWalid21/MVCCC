@@ -11,10 +11,10 @@ namespace MVCCC.Controllers
         //{
         //    return $"Get Movie With Id: {id}";
         //}
-        public string AddMovie(int id)
-        {
-            return $"Add Movie With Id: {id}";
-        }
+        //public string AddMovie(int id)
+        //{
+        //    return $"Add Movie With Id: {id}";
+        //}
 
         //public ContentResult GetMovie(int id)
         //{
@@ -48,29 +48,38 @@ namespace MVCCC.Controllers
         //    var redirectResult = new RedirectToActionResult("AddMovie", "Movie", new { id = 133 });
         //    return redirectResult;
         //}
-        [ActionName("GetMovie")]
-        public IActionResult GetMovieByCategory(int id)
+        //[ActionName("GetMovie")]
+        //public IActionResult GetMovieByCategory(int id)
+        //{
+        //    if (id == 1)
+        //    {
+        //        //return new ContentResult(){Content = $"Get Movie With Id: {id}",ContentType = "text/html"  };
+        //        return Content($"Get Movie With Id: {id}", "text/html");
+        //    }
+        //    else if(id==2)
+        //    {
+        //        return new ContentResult()
+        //        {
+        //            Content = $"Get Movie With Id: {id}",
+        //            ContentType = "object/pdf"
+        //        };
+        //    }
+        //    else
+        //    {
+        //        return new RedirectResult("https://www.google.com");    
+        //    }
+        //}
+
+        //Action Paraneter Binding
+        //1.Form
+        //2.Segment
+        //3.Query params
+        //4.Files
+
+        public IActionResult GetMovie(int id)
         {
-            if (id == 1)
-            {
-                //return new ContentResult(){Content = $"Get Movie With Id: {id}",ContentType = "text/html"  };
-                return Content($"Get Movie With Id: {id}", "text/html");
-            }
-            else if(id==2)
-            {
-                return new ContentResult()
-                {
-                    Content = $"Get Movie With Id: {id}",
-                    ContentType = "object/pdf"
-                };
-            }
-            else
-            {
-                return new RedirectResult("https://www.google.com");    
-            }
+                 return Content($"Get Movie With Id: {id}", "text/html");
         }
-
-
 
 
     }
