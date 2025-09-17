@@ -5,9 +5,15 @@ namespace MVCCC
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddControllersWithViews();
             var app = builder.Build();
+            //app.MapGet("/", () => "Hello World!");
+            //app.MapGet("/login",  signin);
 
-            app.MapGet("/", () => "Hello World!");
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller}/{action}/{id}"
+                );
 
             app.Run();
         }
