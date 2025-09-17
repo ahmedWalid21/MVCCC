@@ -76,10 +76,10 @@ namespace MVCCC.Controllers
         //3.Query params
         //4.Files
 
-        //public IActionResult GetMovie(int id)
-        //{
-        //         return Content($"Get Movie With Id: {id}", "text/html");
-        //}
+        ////public IActionResult GetMovie(int id)
+        ////{
+        ////         return Content($"Get Movie With Id: {id}", "text/html");
+        ////}
 
 
     }
