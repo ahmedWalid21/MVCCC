@@ -12,7 +12,7 @@ namespace MVCCC
 
             app.MapControllerRoute(
                 name: "default",
-              pattern: "{controller}/{action}/{id}"
+              pattern: "{controller}/{action}"
                 );
             app.UseStaticFiles();
             app.Run();

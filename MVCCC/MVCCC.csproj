@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Views\movie\" />
-    <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\Lib\" />
   </ItemGroup>
 

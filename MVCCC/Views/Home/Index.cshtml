@@ -12,12 +12,61 @@
 </head>
 <body>
 
-    <div>
-        <a>Home</a>
-        <a>About Us</a>
-		<a>Contact Us</a>
-        <a>Privacy</a>
-         
-    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links as Buttons</title>
+        <style>
+            div {
+                display: flex;
+                gap: 10px; /* مسافة بين الأزرار */
+                margin-bottom: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: #007BFF;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 6px;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+                a:hover {
+                    background-color: #0056b3;
+                }
+
+            #content {
+                font-size: 20px;
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a onclick="showMessage('Welcome to Home Page')">Home</a>
+            <a onclick="showMessage('Welcome to About Us Page')">About Us</a>
+            <a onclick="showMessage('Welcome to Contact Us Page')">Contact Us</a>
+            <a onclick="showMessage('Welcome to Privacy Page')">Privacy</a>
+        </div>
+
+        <div id="content"></div>
+
+        <script>
+            function showMessage(message) {
+              document.getElementById("content").innerText = message;
+            }
+        </script>
+    </body>
+</html>
+
+       
+
 </body>
 </html>
